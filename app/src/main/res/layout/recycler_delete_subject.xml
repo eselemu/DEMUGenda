@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/nomas"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/roundcorner"
+        android:layout_margin="5dp">
+
+        <ImageButton
+            android:id="@+id/imgButtonDelete_DeleteSubject"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/delete_icon_white"
+            android:background="@drawable/roundcorner"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:id="@+id/txtViewSubject_DeleteSubject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Subject"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

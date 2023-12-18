@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "986176518950",
+    "project_id": "demugenda",
+    "storage_bucket": "demugenda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986176518950:android:3de93f2e63ba0c9d0f1fe7",
+        "android_client_info": {
+          "package_name": "com.example.agenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986176518950-lhus4giqani3p0d45ia7b46de9umm6v0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVHcyl_SrNGClM6CY8xsO3tp1vSfIayfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986176518950-lhus4giqani3p0d45ia7b46de9umm6v0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#454761"
+    tools:context=".AddJobFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Add task"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTaskTitle_AddJob"
+        app:layout_constraintStart_toStartOf="@+id/editTextTaskTitle_AddJob" />
+
+    <EditText
+        android:id="@+id/editTextTaskTitle_AddJob"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#454761"
+        android:ems="10"
+        android:hint="Task"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerTaskSubject_AddJob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTaskDescription_AddJob"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#454761"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarViewTaskDate_AddJob" />
+
+    <Spinner
+        android:id="@+id/spinnerTaskSubject_AddJob"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/calendarViewTaskDate_AddJob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarViewTaskDate_AddJob"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:focusedMonthDateColor="#9FA4E0"
+        android:foregroundTint="#454761"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddTask_AddJob"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#9FA4E0"
+        android:text="Add Task"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskDescription_AddJob" />
+
+    <ImageButton
+        android:id="@+id/imgButAddSubject_AddJob"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/roundcorner"
+        android:src="@drawable/add_icon_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskTitle_AddJob" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

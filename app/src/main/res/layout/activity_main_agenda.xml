@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAgendaActivity"
+    android:id="@+id/mainAgenda"
+    >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar">
+    </include>
+
+    <!--<include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_main_normal_user">
+    </include>-->
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.agenda.MainFragment"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity = "start"
+        android:fitsSystemWindows="true"/>
+
+    <!--
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView_NormalUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_normalUser"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity = "start"
+        app:headerLayout="@layout/nav_header_normal_user"
+        app:menu="@menu/nav_menu_normal_user"/>-->
+
+</androidx.drawerlayout.widget.DrawerLayout>
